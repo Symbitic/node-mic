@@ -1,4 +1,4 @@
-const regex = /In:([0-9.]+)% ([0-9]{2}):([0-9]{2}):([0-9]{2}).([0-9]{2}) \[([0-9]{2}):([0-9]{2}):([0-9]{2}).([0-9]{2})\] Out:([0-9.]+)k? +?\[[\! \-\=]+\|([\! \-\=]+)\] Hd:([0-9.]+)? Clip:([0-9]+)/g;
+const METADATA = /In:([0-9.]+)% ([0-9]{2}):([0-9]{2}):([0-9]{2}).([0-9]{2}) \[([0-9]{2}):([0-9]{2}):([0-9]{2}).([0-9]{2})\] Out:([0-9.]+)k? +?\[[\! \-\=]+\|([\! \-\=]+)\] Hd:([0-9.]+)? Clip:([0-9]+)/g;
 
 export function extractMetadata(info: string) {
     let infoStr = info;
@@ -18,9 +18,9 @@ export function extractMetadata(info: string) {
 
     let m: RegExpExecArray;
 
-    while ((m = regex.exec(infoStr)) !== null) {
-        if (m.index === regex.lastIndex) {
-            regex.lastIndex++;
+    while ((m = METADATA.exec(infoStr)) !== null) {
+        if (m.index === METADATA.lastIndex) {
+            METADATA.lastIndex++;
         }
 
         if (m.length < 2) {
