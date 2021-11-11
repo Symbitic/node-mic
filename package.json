@@ -1,6 +1,6 @@
 {
   "name": "node-mic",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Microphone streaming library for Node.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
