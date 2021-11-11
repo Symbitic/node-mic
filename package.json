@@ -1,0 +1,35 @@
+{
+  "name": "node-mic",
+  "version": "0.1.0",
+  "description": "Microphone streaming library for Node.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist/",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "install": "node ./scripts/postinstall.js"
+  },
+  "keywords": [
+    "mic",
+    "microphone",
+    "sox",
+    "alsa"
+  ],
+  "author": "Alex Shaw",
+  "license": "MIT",
+  "dependencies": {
+    "fflate": "^0.7.1",
+    "node-fetch": "^3.1.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/shelljs": "^0.8.9",
+    "typescript": "^4.4.4"
+  }
+}
