@@ -1,6 +1,6 @@
 {
   "name": "node-mic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Microphone streaming library for Node.js",
   "repository": "https://github.com/Symbitic/node-mic",
   "main": "./dist/index.js",
