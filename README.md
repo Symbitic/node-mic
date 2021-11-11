@@ -26,8 +26,8 @@ After that's done, you can try testing it to make sure your microphone is detect
 ## Example
 
 ```js
-import NodeMic from 'node-mic';
 import fs from 'fs';
+import NodeMic from 'node-mic';
 
 const mic = new NodeMic({
     rate: 16000,
